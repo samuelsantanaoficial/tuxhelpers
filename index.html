@@ -3,135 +3,92 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>TuxHelper</title>
-  <!-- Bootstrap CSS -->
+  <title>TuxHelper - Suporte Linux</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-  <div class="container py-5">
+<body class="bg-light">
+
+  <!-- Navbar Fixa -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">TuxHelper</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#sobre-nos">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="#horario-atendimento">Horário</a></li>
+          <li class="nav-item"><a class="nav-link" href="#como-funciona">Como Funciona</a></li>
+          <li class="nav-item"><a class="nav-link" href="#precos">Preços</a></li>
+          <li class="nav-item"><a class="nav-link" href="#downloads">Downloads</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://wa.me/5575998081926" target="_blank">WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Conteúdo Principal -->
+  <div class="container-lg py-5 mt-5">
+    
     <!-- Cabeçalho -->
-    <header class="mb-5 text-center">
-      <h1 class="display-4">TuxHelper</h1>
-      <p class="lead">Soluções de Suporte Linux</p>
+    <header class="text-center mb-5">
+      <h1 class="fw-bold">TuxHelper</h1>
+      <p class="lead text-secondary">Soluções de Suporte Linux</p>
     </header>
 
-    <hr>
-
     <!-- Sobre Nós -->
-    <section id="sobre-nos" class="mb-5">
-      <h2>Sobre Nós</h2>
-      <p>
-        Na <strong>TuxHelper</strong>, somos apaixonados por Linux e estamos aqui para ajudar você a dominar esse sistema incrível! Oferecemos suporte técnico personalizado para <strong>Iniciantes</strong> que estão migrando para o Linux e precisam de ajuda para configurar o sistema, instalar programas ou resolver problemas básicos.
-      </p>
-      <p>
-        Nosso objetivo é resolver seus problemas de forma rápida, eficiente e com um toque humano. Queremos que você se sinta confiante e seguro ao usar Linux, seja para trabalho, estudo ou lazer.
-      </p>
+    <section id="sobre-nos" class="py-4 bg-white shadow-sm rounded-3 p-4 mb-5">
+      <h2 class="border-start border-5 border-primary ps-3">Sobre Nós</h2>
+      <p>Na <strong>TuxHelper</strong>, somos apaixonados por Linux e estamos aqui para ajudar você a dominar esse sistema incrível! Oferecemos suporte técnico para <strong>Iniciantes</strong> que precisam configurar o sistema, instalar programas ou resolver problemas.</p>
     </section>
-
-    <hr>
 
     <!-- Horário de Atendimento -->
-    <section id="horario-atendimento" class="mb-5">
-      <h2>Horário de Atendimento TuxHelper</h2>
-      <p>
-        Na <strong>TuxHelper</strong>, estamos disponíveis para ajudar você de segunda-feira a sexta-feira, das <strong>8h às 18h</strong>. Nosso horário foi pensado para atender às suas necessidades durante o dia, seja para resolver problemas rápidos ou oferecer suporte mais detalhado.
-      </p>
-      <h4>Detalhes do Horário:</h4>
-      <ul>
-        <li><strong>Segunda a Sexta:</strong> 8h às 18h (horário comercial).</li>
-        <li><strong>Sábados, Domingos e Feriados:</strong> Fechado para atendimento. (aviso prévio)</li>
-      </ul>
-      <h4>Como Funciona o Atendimento:</h4>
-      <ol>
-        <li>
-          <strong>Dentro do Horário Comercial:</strong>
-          <ul>
-            <li>Resposta imediata via
-              <a href="https://www.whatsapp.com/download?lang=pt_BR" target="_blank">WhatsApp</a>,
-              <a href="https://telegram.org/apps" target="_blank">Telegram</a> ou
-              <a href="https://jitsi.org/downloads/" target="_blank">Jitsi</a>.
-            </li>
-            <li>Suporte remoto via
-              <a href="https://www.teamviewer.com/pt-br/download/linux/" target="_blank">TeamViewer</a>,
-              <a href="https://anydesk.com/pt/downloads/linux" target="_blank">AnyDesk</a> ou
-              <a href="https://github.com/rustdesk/rustdesk/releases/tag/1.3.7" target="_blank">Rustdesk</a>.
-            </li>
-          </ul>
-        </li>
-        <li>
-          <strong>Fora do Horário Comercial:</strong>
-          <ul>
-            <li>Mensagens recebidas fora do horário serão respondidas no próximo dia útil.</li>
-          </ul>
-        </li>
-      </ol>
-      <h4>Emergências:</h4>
-      <p>
-        Para problemas críticos que precisam de atenção imediata, oferecemos um serviço de <strong>suporte emergencial</strong> com custo adicional. Entre em contato para mais detalhes.
-      </p>
+    <section id="horario-atendimento" class="py-4 bg-white shadow-sm rounded-3 p-4 mb-5">
+      <h2 class="border-start border-5 border-primary ps-3">Horário de Atendimento</h2>
+      <p><strong>Segunda a Sexta:</strong> 8h às 18h.</p>
+      <p><strong>Sábados, Domingos e Feriados:</strong> Fechado.</p>
     </section>
-
-    <hr>
 
     <!-- Como Funciona -->
-    <section id="como-funciona" class="mb-5">
-      <h2>Como Funciona?</h2>
-      <ol>
-        <li><strong>Entre em Contato:</strong> Envie uma mensagem via WhatsApp ou Telegram com seu problema.
-        </li>
-        <li><strong>Resolução Rápida:</strong> Assim que o pagamento for confirmado, nossa equipe entra em ação para resolver seu problema no menor tempo possível.</li>
-      </ol>
-    </section>
-
-    <hr>
-
-    <!-- Preços -->
-    <section id="precos" class="mb-5">
-      <h3>Preços</h3>
-      <ul>
-        <li>
-          <strong>R$40/hora</strong> (Suporte via
-          <a href="https://www.teamviewer.com/pt-br/download/linux/" target="_blank">TeamViewer</a>,
-          <a href="https://anydesk.com/pt/downloads/linux" target="_blank">AnyDesk</a>,
-          <a href="https://github.com/rustdesk/rustdesk/releases/tag/1.3.7" target="_blank">Rustdesk</a>,
-          <a href="https://jitsi.org/downloads/" target="_blank">Jitsi</a>,
-          <a href="https://www.whatsapp.com/download?lang=pt_BR" target="_blank">WhatsApp</a> ou
-          <a href="https://telegram.org/apps" target="_blank">Telegram</a>).
-        </li>
-        <li>
-          <strong>R$30</strong> (Pacotes por serviço)
-          <ul>
-            <li>Instalação de programas</li>
-            <li>Configuração de programas</li>
-          </ul>
-        </li>
+    <section id="como-funciona" class="py-4 bg-white shadow-sm rounded-3 p-4 mb-5">
+      <h2 class="border-start border-5 border-primary ps-3">Como Funciona?</h2>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item"><strong>1.</strong> Entre em contato pelo WhatsApp ou Telegram.</li>
+        <li class="list-group-item"><strong>2.</strong> Após o pagamento, nossa equipe resolve seu problema.</li>
       </ul>
     </section>
 
-    <hr>
-
-    <!-- Pronto para Começar -->
-    <section id="pronto" class="mb-5 text-center">
-      <h2>Pronto para Começar?</h2>
-      <p>
-        Se você é um iniciante e não tem tempo para resolver seus problemas com linux, a <strong>TuxHelper</strong> está aqui para ajudar você a aproveitar ao máximo o Linux.
-      </p>
-      <p><strong>Entre em contato agora mesmo:</strong></p>
-      <p>
-        <a href="https://wa.me/5575998081926" target="_blank" class="btn btn-success">WhatsApp</a>
-        <a href="https://t.me/samuelsantana_oficial" target="_blank" class="btn btn-primary">Telegram</a>
-      </p>
+    <!-- Preços -->
+    <section id="precos" class="py-4 bg-white shadow-sm rounded-3 p-4 mb-5">
+      <h2 class="border-start border-5 border-primary ps-3">Preços</h2>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item"><strong>R$40/hora</strong> - Suporte via WhatsApp, Telegram ou TeamViewer.</li>
+        <li class="list-group-item"><strong>R$30</strong> - Instalação e configuração de programas.</li>
+      </ul>
     </section>
 
-    <hr>
+    <!-- Downloads Essenciais -->
+    <section id="downloads" class="py-4 bg-white shadow-sm rounded-3 p-4 mb-5">
+      <h2 class="border-start border-5 border-primary ps-3">Downloads Essenciais</h2>
+      <p>Baixe as ferramentas essenciais para suporte remoto:</p>
+      <div class="row g-3">
+        <div class="col-md-4"><a href="https://www.whatsapp.com/download/" target="_blank" class="btn btn-outline-success w-100">📱 WhatsApp</a></div>
+        <div class="col-md-4"><a href="https://telegram.org/apps" target="_blank" class="btn btn-outline-primary w-100">💬 Telegram</a></div>
+        <div class="col-md-4"><a href="https://jitsi.org/downloads/" target="_blank" class="btn btn-outline-dark w-100">🎥 Jitsi Meet</a></div>
+        <div class="col-md-4"><a href="https://anydesk.com/pt/downloads/linux" target="_blank" class="btn btn-outline-danger w-100">🖥️ AnyDesk</a></div>
+        <div class="col-md-4"><a href="https://www.teamviewer.com/pt-br/download/linux/" target="_blank" class="btn btn-outline-secondary w-100">🔗 TeamViewer</a></div>
+        <div class="col-md-4"><a href="https://rustdesk.com/" target="_blank" class="btn btn-outline-warning w-100">🔧 RustDesk (Recomendado)</a></div>
+      </div>
+    </section>
 
     <!-- Rodapé -->
-    <footer class="text-center">
-      <p><strong>TuxHelper</strong> – Sua jornada no Linux, mais simples e eficiente. 🐧🚀</p>
+    <footer class="text-center bg-dark text-light py-5">
+      <p>&copy; 2025 TuxHelper - Sua jornada no Linux, mais simples e eficiente. 🐧🚀</p>
     </footer>
   </div>
 
-  <!-- Bootstrap Bundle com Popper -->
+  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
